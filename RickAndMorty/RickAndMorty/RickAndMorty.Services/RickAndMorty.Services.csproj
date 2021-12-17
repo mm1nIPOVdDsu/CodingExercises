@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RickAndMorty.Common\RickAndMorty.Common.csproj" />
+    <ProjectReference Include="..\RickAndMorty.Data\RickAndMorty.Data.csproj" />
+    <ProjectReference Include="..\RickAndMorty.Domain\RickAndMorty.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

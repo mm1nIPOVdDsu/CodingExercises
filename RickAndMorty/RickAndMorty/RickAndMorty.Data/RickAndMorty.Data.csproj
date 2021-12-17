@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CharacterEntity.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="CharacterEntity.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RickAndMorty.Common\RickAndMorty.Common.csproj" />
+    <ProjectReference Include="..\RickAndMorty.Domain\RickAndMorty.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
