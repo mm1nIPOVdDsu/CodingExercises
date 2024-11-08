@@ -17,6 +17,8 @@ namespace RickAndMorty
                 });
 
             builder.Build().Run();
+
+            // this is a test, adding stuff to add stuff
         }
     }
 }

@@ -10,6 +10,8 @@
     using RickAndMorty.Services.Interfaces;
     using RickAndMorty.Services.Mappers;
 
+    using System;
+
     /// <summary>
     ///     Setup for the application.
     /// </summary>
@@ -28,6 +30,8 @@
             services.Add(new ServiceDescriptor(typeof(IRepository<CharacterEntity>), typeof(Repository<CharacterEntity>), ServiceLifetime.Singleton));
             services.Add(new ServiceDescriptor(typeof(ICharacterMapper), typeof(CharacterMapper), ServiceLifetime.Singleton));
             services.Add(new ServiceDescriptor(typeof(IRmDbContext), typeof(RmDbContext), ServiceLifetime.Singleton));
+
+            Console.WriteLine("Adding stupid crap to add it.");
         }
     }
 }
